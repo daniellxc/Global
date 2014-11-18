@@ -6,7 +6,7 @@ using System.Text;
 
 namespace LAB5GED.DOMAIN
 {
-    class teste
+    class teste1
     {
     }
 }
