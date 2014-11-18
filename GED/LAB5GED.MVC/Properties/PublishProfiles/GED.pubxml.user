@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/09/2014 15:05:34</publishTime>
+    </File>
+    <File Include="bin/GridMvc.dll">
+      <publishTime>10/09/2014 15:05:27</publishTime>
+    </File>
+    <File Include="bin/LAB5GED.DOMAIN.dll">
+      <publishTime>11/12/2014 09:54:08</publishTime>
+    </File>
+    <File Include="bin/LAB5GED.DOMAIN.pdb">
+      <publishTime>11/12/2014 09:13:04</publishTime>
+    </File>
+    <File Include="bin/LAB5GED.MVC.dll">
+      <publishTime>11/12/2014 15:58:02</publishTime>
+    </File>
+    <File Include="bin/LAB5GED.MVC.pdb">
+      <publishTime>11/12/2014 09:31:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>10/09/2014 15:05:28</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/12/2014 15:57:11</publishTime>
+    </File>
+    <File Include="bin/Sistema.Acadiesp.dll">
+      <publishTime>10/27/2014 11:25:05</publishTime>
+    </File>
+    <File Include="bin/Sistema.Acadiesp.pdb">
+      <publishTime>10/27/2014 11:25:05</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>11/12/2014 15:57:11</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/12/2014 15:57:11</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>11/12/2014 15:57:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>10/09/2014 15:05:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/12/2014 15:57:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/12/2014 15:57:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>10/09/2014 15:05:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>10/09/2014 15:05:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>10/09/2014 15:05:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>10/09/2014 15:05:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>10/09/2014 15:05:29</publishTime>
+    </File>
+    <File Include="Content/Gridmvc.css">
+      <publishTime>10/09/2014 15:05:33</publishTime>
+    </File>
+    <File Include="Content/img/iesp.png">
+      <publishTime>11/11/2014 15:54:44</publishTime>
+    </File>
+    <File Include="Content/img/iesp_ico.png">
+      <publishTime>11/11/2014 16:32:49</publishTime>
+    </File>
+    <File Include="Content/img/logout-16.png">
+      <publishTime>11/11/2014 17:53:09</publishTime>
+    </File>
+    <File Include="Estilo/assets/brand/bootstrap-outline.svg">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/brand/bootstrap-punchout.svg">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/brand/bootstrap-solid.svg">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/css/docs.min.css">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/css/_src/docs.css">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/css/_src/pygments-manni.css">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/flash/ZeroClipboard.swf">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Estilo/assets/img/components.png">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/img/devices.png">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/img/sass-less.png">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/customize.min.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/docs.min.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/ie-emulation-modes-warning.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/ie10-viewport-bug-workaround.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/ie8-responsive-file-warning.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/raw-files.min.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/_src/application.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/_src/customizer.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/_vendor/blob.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/_vendor/filesaver.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/_vendor/holder.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/_vendor/jszip.min.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/_vendor/less.min.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/_vendor/uglify.min.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/assets/js/_vendor/ZeroClipboard.min.js">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/dist/css/bootstrap-theme.css.map">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/dist/css/bootstrap-theme.min.css">
+      <publishTime>11/12/2014 15:54:20</publishTime>
+    </File>
+    <File Include="Estilo/dist/css/bootstrap.css.map">
+      <publishTime>10/09/2014 15:05:31</publishTime>
+    </File>
+    <File Include="Estilo/dist/css/bootstrap.min.css">
+      <publishTime>11/11/2014 15:48:49</publishTime>
+    </File>
+    <File Include="Estilo/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/09/2014 15:05:32</publishTime>
+    </File>
+    <File Include="Estilo/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/09/2014 15:05:32</publishTime>
+    </File>
+    <File Include="Estilo/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/09/2014 15:05:32</publishTime>
+    </File>
+    <File Include="Estilo/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/09/2014 15:05:32</publishTime>
+    </File>
+    <File Include="Estilo/dist/js/bootstrap.min.js">
+      <publishTime>10/09/2014 15:05:32</publishTime>
+    </File>
+    <File Include="Estilo/login.css">
+      <publishTime>10/14/2014 08:48:52</publishTime>
+    </File>
+    <File Include="Estilo/starter-template.css">
+      <publishTime>10/09/2014 15:05:32</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Grid.mvc.readme">
+      <publishTime>10/09/2014 15:05:32</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/12/2014 15:57:24</publishTime>
+    </File>
+    <File Include="Scripts/gridmvc.js">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Scripts/gridmvc.lang.ru.js">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Scripts/gridmvc.min.js">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.3.js">
+      <publishTime>11/03/2014 11:46:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.3.min.js">
+      <publishTime>11/03/2014 11:39:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>11/03/2014 11:39:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>11/03/2014 11:39:23</publishTime>
+    </File>
+    <File Include="Views/Acao/Cadastrar.cshtml">
+      <publishTime>11/04/2014 15:26:01</publishTime>
+    </File>
+    <File Include="Views/Acao/Index.cshtml">
+      <publishTime>11/04/2014 15:29:37</publishTime>
+    </File>
+    <File Include="Views/Classe/Cadastrar.cshtml">
+      <publishTime>11/11/2014 16:46:50</publishTime>
+    </File>
+    <File Include="Views/Classe/Index.cshtml">
+      <publishTime>11/10/2014 09:47:53</publishTime>
+    </File>
+    <File Include="Views/Consulta/ConsultaAluno.cshtml">
+      <publishTime>11/10/2014 14:54:03</publishTime>
+    </File>
+    <File Include="Views/Consulta/ConsultarDocumentosAluno.cshtml">
+      <publishTime>11/03/2014 15:33:42</publishTime>
+    </File>
+    <File Include="Views/Consulta/DocumentosDoAluno.cshtml">
+      <publishTime>11/11/2014 15:37:59</publishTime>
+    </File>
+    <File Include="Views/Documento/Cadastrar.cshtml">
+      <publishTime>10/10/2014 15:49:57</publishTime>
+    </File>
+    <File Include="Views/Documento/Detalhar.cshtml">
+      <publishTime>11/11/2014 15:47:38</publishTime>
+    </File>
+    <File Include="Views/Documento/Index.cshtml">
+      <publishTime>11/10/2014 15:09:27</publishTime>
+    </File>
+    <File Include="Views/Documento/ListarDocumentosNaoRevisados.cshtml">
+      <publishTime>10/28/2014 09:46:25</publishTime>
+    </File>
+    <File Include="Views/Documento/Revisar.cshtml">
+      <publishTime>10/28/2014 09:42:39</publishTime>
+    </File>
+    <File Include="Views/Grupo/Cadastrar.cshtml">
+      <publishTime>11/12/2014 15:07:00</publishTime>
+    </File>
+    <File Include="Views/Grupo/Index.cshtml">
+      <publishTime>11/11/2014 15:21:38</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Views/Login/AcessoNegado.cshtml">
+      <publishTime>10/30/2014 16:40:01</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>11/03/2014 16:09:06</publishTime>
+    </File>
+    <File Include="Views/Permissao/AdicionaGrupo.cshtml">
+      <publishTime>11/10/2014 10:33:40</publishTime>
+    </File>
+    <File Include="Views/Permissao/Index.cshtml">
+      <publishTime>11/06/2014 15:39:41</publishTime>
+    </File>
+    <File Include="Views/PrazoGuarda/Cadastrar.cshtml">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Views/PrazoGuarda/Index.cshtml">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Views/Serie/Cadastrar.cshtml">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Views/Serie/Index.cshtml">
+      <publishTime>11/10/2014 09:47:53</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Acao.cshtml">
+      <publishTime>11/12/2014 15:00:37</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Classe.cshtml">
+      <publishTime>11/12/2014 15:00:50</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Documento.cshtml">
+      <publishTime>11/12/2014 15:01:02</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/DocumentosNaoRevisados.cshtml">
+      <publishTime>11/11/2014 17:34:47</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Grupo.cshtml">
+      <publishTime>11/12/2014 15:01:20</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/PrazoGuarda.cshtml">
+      <publishTime>11/12/2014 15:01:33</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/RevisaoDocumento.cshtml">
+      <publishTime>11/12/2014 15:02:08</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Serie.cshtml">
+      <publishTime>11/12/2014 15:01:57</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Subclasse.cshtml">
+      <publishTime>11/12/2014 15:02:23</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Subserie.cshtml">
+      <publishTime>11/12/2014 15:43:40</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/SubserieIndice.cshtml">
+      <publishTime>11/12/2014 15:03:29</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/SubserieIndiceValor.cshtml">
+      <publishTime>10/27/2014 14:15:59</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Usuario.cshtml">
+      <publishTime>11/12/2014 15:43:40</publishTime>
+    </File>
+    <File Include="Views/Shared/_Grid.cshtml">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Views/Shared/_GridPager.cshtml">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>11/12/2014 15:43:40</publishTime>
+    </File>
+    <File Include="Views/Subclasse/Cadastrar.cshtml">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Views/Subclasse/Index.cshtml">
+      <publishTime>11/10/2014 09:47:53</publishTime>
+    </File>
+    <File Include="Views/Subserie/Cadastrar.cshtml">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Views/Subserie/Index.cshtml">
+      <publishTime>11/10/2014 09:47:53</publishTime>
+    </File>
+    <File Include="Views/SubserieIndice/Cadastrar.cshtml">
+      <publishTime>10/13/2014 15:49:29</publishTime>
+    </File>
+    <File Include="Views/SubserieIndice/Index.cshtml">
+      <publishTime>11/10/2014 09:47:53</publishTime>
+    </File>
+    <File Include="Views/SubserieIndiceValor/Index.cshtml">
+      <publishTime>10/20/2014 10:59:15</publishTime>
+    </File>
+    <File Include="Views/SubserieIndiceValor/Indexacao.cshtml">
+      <publishTime>10/17/2014 09:50:28</publishTime>
+    </File>
+    <File Include="Views/Usuario/AdicionarAoGrupo.cshtml">
+      <publishTime>11/10/2014 10:32:23</publishTime>
+    </File>
+    <File Include="Views/Usuario/AlterarSenha.cshtml">
+      <publishTime>11/03/2014 09:20:54</publishTime>
+    </File>
+    <File Include="Views/Usuario/Cadastrar.cshtml">
+      <publishTime>11/11/2014 13:51:05</publishTime>
+    </File>
+    <File Include="Views/Usuario/Index.cshtml">
+      <publishTime>11/11/2014 11:11:21</publishTime>
+    </File>
+    <File Include="Views/Usuario/MeuPerfil.cshtml">
+      <publishTime>11/11/2014 14:14:34</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>10/09/2014 15:05:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/12/2014 15:58:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

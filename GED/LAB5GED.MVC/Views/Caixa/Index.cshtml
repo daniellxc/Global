@@ -1,0 +1,31 @@
+﻿@model List<LAB5GED.DOMAIN.Entidades.Caixa>
+@using GridMvc.Html
+
+<h2>Controle de Caixa</h2>
+
+
+@Html.ActionLink("Criar Nova Caixa", "Cadastrar", new LAB5GED.DOMAIN.Entidades.Caixa(), new {@class="btn btn-primary" })        
+@Html.Grid(Model).Columns(c=>
+    {
+     c.Add(a=>a.IdCaixa).Titled("Identificação");
+     c.Add(a=>a.Localizacao).Titled("Localização");
+     c.Add(a => a.Documentos).Titled("Volume Atual").RenderValueAs(a => a.Documentos.Count.ToString());
+     c.Add(a => a.Aberta).Titled("Disponibilidade").Encoded(false).Sanitized(false).RenderValueAs(cl => CustomRenderingOfColumn(cl));
+     c.Add().Encoded(false).Sanitized(false).RenderValueAs(b => @Html.ActionLink("Editar", "Editar", new {_registroCaixa = b.Registro }));
+     
+     
+    }).WithPaging(20).Sortable(true)
+
+
+@helper CustomRenderingOfColumn(LAB5GED.DOMAIN.Entidades.Caixa item){
+    
+    if (item.Aberta)
+    {
+    <span style="color:green;">ABERTA</span>
+    }
+    else
+    {
+     <span style="color:red;">FECHADA</span>          
+    }
+    
+}

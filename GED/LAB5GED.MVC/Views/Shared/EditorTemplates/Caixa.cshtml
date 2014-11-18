@@ -1,0 +1,35 @@
+﻿@model LAB5GED.DOMAIN.Entidades.Caixa
+
+
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Informações da Caixa</legend>
+
+            @Html.HiddenFor(model=>model.Registro)
+            
+            @Html.LabelFor(model => model.IdCaixa)   <br />
+            @Html.EditorFor(model => model.IdCaixa)
+            @Html.ValidationMessageFor(model => model.IdCaixa) <br />
+       
+            @Html.LabelFor(model => model.Localizacao) <br />
+    
+            @Html.EditorFor(model => model.Localizacao)
+            @Html.ValidationMessageFor(model => model.Localizacao) <br />
+ 
+            @Html.LabelFor(model => model.Aberta) <br />
+  
+            @Html.EditorFor(model => model.Aberta)
+            @Html.ValidationMessageFor(model => model.Aberta) <br />
+
+
+       
+    </fieldset>
+            @Html.ActionLink("Voltar", "Index", "", new {@class="btn btn-primary"})
+            
+            <input type="submit" value="Cadastrar Caixa" class="btn btn-primary"/>
+           
+
+
+
+
