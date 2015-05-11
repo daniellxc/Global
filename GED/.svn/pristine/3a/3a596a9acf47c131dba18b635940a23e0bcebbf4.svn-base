@@ -1,4 +1,0 @@
-﻿@using (Html.BeginForm("Indexar", "SubserieIndiceValor"))
-{
-    @Html.EditorForModel("SubserieIndiceValor")
-}
