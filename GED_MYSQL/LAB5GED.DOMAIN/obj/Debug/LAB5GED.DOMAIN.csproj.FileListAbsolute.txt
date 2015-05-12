@@ -81,3 +81,10 @@ F:\Projetos\LAB5\ged\Aplicação\GED_MYSQL\LAB5GED.DOMAIN\bin\Debug\EntityFramew
 F:\Projetos\LAB5\ged\Aplicação\GED_MYSQL\LAB5GED.DOMAIN\obj\Debug\LAB5GED.DOMAIN.csprojResolveAssemblyReference.cache
 F:\Projetos\LAB5\ged\Aplicação\GED_MYSQL\LAB5GED.DOMAIN\obj\Debug\LAB5GED.DOMAIN.dll
 F:\Projetos\LAB5\ged\Aplicação\GED_MYSQL\LAB5GED.DOMAIN\obj\Debug\LAB5GED.DOMAIN.pdb
+D:\Git\projetos\GED_MYSQL\LAB5GED.DOMAIN\bin\Debug\LAB5GED.DOMAIN.dll.config
+D:\Git\projetos\GED_MYSQL\LAB5GED.DOMAIN\bin\Debug\LAB5GED.DOMAIN.dll
+D:\Git\projetos\GED_MYSQL\LAB5GED.DOMAIN\bin\Debug\LAB5GED.DOMAIN.pdb
+D:\Git\projetos\GED_MYSQL\LAB5GED.DOMAIN\bin\Debug\EntityFramework.dll
+D:\Git\projetos\GED_MYSQL\LAB5GED.DOMAIN\obj\Debug\LAB5GED.DOMAIN.csprojResolveAssemblyReference.cache
+D:\Git\projetos\GED_MYSQL\LAB5GED.DOMAIN\obj\Debug\LAB5GED.DOMAIN.dll
+D:\Git\projetos\GED_MYSQL\LAB5GED.DOMAIN\obj\Debug\LAB5GED.DOMAIN.pdb
