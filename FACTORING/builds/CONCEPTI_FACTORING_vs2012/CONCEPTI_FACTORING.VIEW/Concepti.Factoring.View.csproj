@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7DE83D5B-5C8B-4559-B9F3-5DE42AB37B1F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CONCEPTI_FACTORING.VIEW</RootNamespace>
+    <AssemblyName>JCExpress</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\PUBLICACAO\JCExpress\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>25</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FEFD76DAF9C0A9137FD8239B1EDBA0C8F7F41E87</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Concepti.Factoring.View_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web">
+      <HintPath>D:\sistemas\IESP_NOVO2\ACADEMICO\bin\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CONCEPTI_FACTORING.DATA\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="validacao">
+      <HintPath>..\..\testValidacao\validacao\bin\Debug\validacao.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cenarios\Ajuda\FAjuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Ajuda\FAjuda.Designer.cs">
+      <DependentUpon>FAjuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Boleto\FBaixarBoleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Boleto\FBaixarBoleto.Designer.cs">
+      <DependentUpon>FBaixarBoleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Boleto\FBaixarBoletosContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Boleto\FBaixarBoletosContrato.Designer.cs">
+      <DependentUpon>FBaixarBoletosContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Boleto\FImprimirBoletos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Boleto\FImprimirBoletos.Designer.cs">
+      <DependentUpon>FImprimirBoletos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Cadastro\FCadastroArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Cadastro\FCadastroArea.Designer.cs">
+      <DependentUpon>FCadastroArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Cadastro\FCadastroCidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Cadastro\FCadastroCidade.Designer.cs">
+      <DependentUpon>FCadastroCidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Cadastro\FCadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Cadastro\FCadastroCliente.Designer.cs">
+      <DependentUpon>FCadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Cadastro\FCadastroVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Cadastro\FCadastroVendedor.Designer.cs">
+      <DependentUpon>FCadastroVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Emprestimo\contrato.cs" />
+    <Compile Include="Cenarios\Emprestimo\FContratacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Emprestimo\FContratacao.Designer.cs">
+      <DependentUpon>FContratacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\FPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\FPrincipal.Designer.cs">
+      <DependentUpon>FPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Manutencao\FBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Manutencao\FBackup.Designer.cs">
+      <DependentUpon>FBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Manutencao\FCadastroDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Manutencao\FCadastroDespesa.Designer.cs">
+      <DependentUpon>FCadastroDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Manutencao\FCadastroFeriado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Manutencao\FCadastroFeriado.Designer.cs">
+      <DependentUpon>FCadastroFeriado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Manutencao\FControles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Manutencao\FControles.Designer.cs">
+      <DependentUpon>FControles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\Datasets\dtBoletos.cs">
+      <DependentUpon>dtBoletos.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\Datasets\dtBoletos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtBoletos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\Datasets\dtCabecalhoContrato.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtCabecalhoContrato.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\Datasets\dtCarnes.cs">
+      <DependentUpon>dtCarnes.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\Datasets\dtCarnes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtCarnes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FBoletos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FBoletos.Designer.cs">
+      <DependentUpon>FBoletos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FCarneCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FCarneCliente.Designer.cs">
+      <DependentUpon>FCarneCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FCarnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FCarnes.Designer.cs">
+      <DependentUpon>FCarnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FClientes.Designer.cs">
+      <DependentUpon>FClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FConsultaCarnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FConsultaCarnes.Designer.cs">
+      <DependentUpon>FConsultaCarnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FConsultaContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FConsultaContrato.Designer.cs">
+      <DependentUpon>FConsultaContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FConsultarCarnesCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FConsultarCarnesCliente.Designer.cs">
+      <DependentUpon>FConsultarCarnesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FConsultaRota2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FConsultaRota2.Designer.cs">
+      <DependentUpon>FConsultaRota2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FConsultaRotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Relatorio\FConsultaRotas.Designer.cs">
+      <DependentUpon>FConsultaRotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Rota\FCadastroRota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Rota\FCadastroRota.Designer.cs">
+      <DependentUpon>FCadastroRota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cenarios\Rota\FPrestacaoConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cenarios\Rota\FPrestacaoConta.Designer.cs">
+      <DependentUpon>FPrestacaoConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="Cenarios\Ajuda\FAjuda.resx">
+      <DependentUpon>FAjuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Boleto\FBaixarBoleto.resx">
+      <DependentUpon>FBaixarBoleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Boleto\FBaixarBoletosContrato.resx">
+      <DependentUpon>FBaixarBoletosContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Boleto\FImprimirBoletos.resx">
+      <DependentUpon>FImprimirBoletos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Cadastro\FCadastroArea.resx">
+      <DependentUpon>FCadastroArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Cadastro\FCadastroCidade.resx">
+      <DependentUpon>FCadastroCidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Cadastro\FCadastroCliente.resx">
+      <DependentUpon>FCadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Cadastro\FCadastroVendedor.resx">
+      <DependentUpon>FCadastroVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Emprestimo\FContratacao.resx">
+      <DependentUpon>FContratacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\FPrincipal.resx">
+      <DependentUpon>FPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Manutencao\FBackup.resx">
+      <DependentUpon>FBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Manutencao\FCadastroDespesa.resx">
+      <DependentUpon>FCadastroDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Manutencao\FCadastroFeriado.resx">
+      <DependentUpon>FCadastroFeriado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Manutencao\FControles.resx">
+      <DependentUpon>FControles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Relatorio\FBoletos.resx">
+      <DependentUpon>FBoletos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Relatorio\FCarneCliente.resx">
+      <DependentUpon>FCarneCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Relatorio\FCarnes.resx">
+      <DependentUpon>FCarnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Relatorio\FClientes.resx">
+      <DependentUpon>FClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Relatorio\FConsultaCarnes.resx">
+      <DependentUpon>FConsultaCarnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Relatorio\FConsultaContrato.resx">
+      <DependentUpon>FConsultaContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Relatorio\FConsultarCarnesCliente.resx">
+      <DependentUpon>FConsultarCarnesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Relatorio\FConsultaRota2.resx">
+      <DependentUpon>FConsultaRota2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Relatorio\FConsultaRotas.resx">
+      <DependentUpon>FConsultaRotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Relatorio\RptBoletos.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Relatorio\RptCarnes.rdlc" />
+    <EmbeddedResource Include="Cenarios\Relatorio\RptCarnesCliente.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Rota\FCadastroRota.resx">
+      <DependentUpon>FCadastroRota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cenarios\Rota\FPrestacaoConta.resx">
+      <DependentUpon>FPrestacaoConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Cenarios\Relatorio\Datasets\dtBoletos.xsc">
+      <DependentUpon>dtBoletos.xsd</DependentUpon>
+    </None>
+    <None Include="Cenarios\Relatorio\Datasets\dtBoletos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtBoletos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Cenarios\Relatorio\Datasets\dtBoletos.xss">
+      <DependentUpon>dtBoletos.xsd</DependentUpon>
+    </None>
+    <None Include="Cenarios\Relatorio\Datasets\dtCabecalhoContrato.xsc">
+      <DependentUpon>dtCabecalhoContrato.xsd</DependentUpon>
+    </None>
+    <None Include="Cenarios\Relatorio\Datasets\dtCabecalhoContrato.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtCabecalhoContrato.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Cenarios\Relatorio\Datasets\dtCabecalhoContrato.xss">
+      <DependentUpon>dtCabecalhoContrato.xsd</DependentUpon>
+    </None>
+    <None Include="Cenarios\Relatorio\Datasets\dtCarnes.xsc">
+      <DependentUpon>dtCarnes.xsd</DependentUpon>
+    </None>
+    <None Include="Cenarios\Relatorio\Datasets\dtCarnes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtCarnes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Cenarios\Relatorio\Datasets\dtCarnes.xss">
+      <DependentUpon>dtCarnes.xsd</DependentUpon>
+    </None>
+    <None Include="Concepti.Factoring.View_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\Concepti.Factoring.Data.boleto.datasource" />
+    <None Include="Properties\DataSources\Concepti.Factoring.Data.contratante.datasource" />
+    <None Include="Properties\DataSources\Concepti.Factoring.Data.contrato.datasource" />
+    <None Include="Properties\DataSources\Concepti.Factoring.Data.Entidades.Cidade.datasource" />
+    <None Include="Properties\DataSources\Concepti.Factoring.Data.Entidades.Contratante.datasource" />
+    <None Include="Properties\DataSources\Concepti.Factoring.Data.Entidades.Contrato.datasource" />
+    <None Include="Properties\DataSources\Concepti.Factoring.Data.Entidades.Periodicidade.datasource" />
+    <None Include="Properties\DataSources\Concepti.Factoring.Data.feriado.datasource" />
+    <None Include="Properties\DataSources\Concepti.Factoring.Data.rota.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Ajuda.FAjuda.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Boleto.boletoDAO.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Boleto.FBaixarBoleto.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Cadastro.FCadastroCidade.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Cadastro.FCadastroCliente.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Emprestimo.FContratacao.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.FPrincipal.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtBoletos+boletosDataTable.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtBoletos+boletosRow.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtBoletos+boletosRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtBoletos+boletosRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtBoletos.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtCabecalhoContrato+CabecalhoDataTable.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtCabecalhoContrato+CabecalhoRow.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtCabecalhoContrato+CabecalhoRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtCabecalhoContrato+CabecalhoRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtCabecalhoContrato.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtCarnes+carnesDataTable.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtCarnes+carnesRow.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtCarnes+carnesRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtCarnes+carnesRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Cenarios.Relatorio.Datasets.dtCarnes.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\CONCEPTI_FACTORING.VIEW.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Util.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagens\concepti.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.11.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Report Viewer 2012 Runtime</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.11.0.x64">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types para SQL Server® 2012 %28x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.11.0.x86">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types para SQL Server® 2012 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CONCEPTI_FACTORING.DATA\Concepti.Factoring.Data.csproj">
+      <Project>{71e95542-e883-43f7-97a1-2fea8dc92851}</Project>
+      <Name>Concepti.Factoring.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
